@@ -10,8 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/swagLab.feature",
         plugin = {
                 "html:cucumber-reports/report.html"
-        },
-        tags = "@problemUser"
+        }
 )
 public class Runner {
 }

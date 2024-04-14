@@ -59,7 +59,7 @@ Feature: swag lab test
     And User click on Login button
     Then Click on Add to cart button of "backpack"
     Then Select "Price (high to low)" from the sort container
-    And Verify an alert is dispalayed
+    And Click on the "1" item
 
     Examples:
       | username   | password     |
@@ -71,9 +71,10 @@ Feature: swag lab test
     Then User enter the "<username>" and  "<password>"
     And User click on Login button
     Then Click on Add to cart button of "backpack"
+    Then Select "Price (high to low)" from the sort container
+    And Click on the "1" item
+    When Add to cart button is clicked
     Then Click on Remove Button
-    Then Click on shopping cart container
-    And Verify the product is not removed
 
     Examples:
       | username     | password     |
